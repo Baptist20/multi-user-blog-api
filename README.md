@@ -6,6 +6,8 @@ Some endpoints (like email verification, token-based actions, and user-restricte
 
 To fully experience and test this API, a frontend or tools like Postman are recommended.
 
+Swagger UI- https://multi-user-blog-api.onrender.com/api-docs
+
 # 🧠 Multi-User Blog Platform API (MERN Stack)
 
 This is the **backend RESTful API** for a full-featured multi-user blog platform, built with **Node.js**, **Express**, and **MongoDB**. It supports user authentication, role-based access (user/admin), blog post management, file uploads (Cloudinary), comments, and filtering features.
