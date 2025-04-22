@@ -118,7 +118,7 @@ PUT /api/auth/reset-password/:token
 etc(There's more usage like Banning, Deleting(user or a blog), Getting all users and blog posts, and lots more)
 
 📌 Notes
-All sensitive routes require JWT in Authorization header.
+All sensitive routes require HTTP only cookies to access.
 
 All filtering/sorting is done via query parameters.
 
