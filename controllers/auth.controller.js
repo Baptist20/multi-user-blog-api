@@ -36,9 +36,10 @@ exports.register = async (req, res, next) => {
 
     createCookie(res, user._id);
 
-    res
-      .status(StatusCodes.CREATED)
-      .json({ user: { name: user.name, email: user.email } });
+    res.status(StatusCodes.CREATED).json({
+      user: { name: user.name, email: user.email },
+      message: "A verification email has been sent to your email",
+    });
   } catch (err) {
     next(err);
   }
@@ -63,9 +64,10 @@ exports.login = async (req, res, next) => {
 
     createCookie(res, user._id);
 
-    res
-      .status(StatusCodes.OK)
-      .json({ user: { name: user.name, email: user.email } });
+    res.status(StatusCodes.OK).json({
+      user: { name: user.name, email: user.email },
+      message: "Logged in successfully",
+    });
   } catch (err) {
     next(err);
   }

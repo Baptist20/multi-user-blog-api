@@ -1,3 +1,11 @@
+## ⚠️ Swagger UI Note
+
+This API is designed for real-world applications with frontend interaction.
+
+Some endpoints (like email verification, token-based actions, and user-restricted routes) rely on `query params`, `cookies`, or `JWT authentication` which are not fully testable through Swagger UI alone.
+
+To fully experience and test this API, a frontend or tools like Postman are recommended.
+
 # 🧠 Multi-User Blog Platform API (MERN Stack)
 
 This is the **backend RESTful API** for a full-featured multi-user blog platform, built with **Node.js**, **Express**, and **MongoDB**. It supports user authentication, role-based access (user/admin), blog post management, file uploads (Cloudinary), comments, and filtering features.
